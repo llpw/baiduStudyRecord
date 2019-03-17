@@ -1,0 +1,10 @@
+#side {
+    background-color: rgba(102, 102, 102, 0.2);
+    text-align: center;
+}
+h3 {
+    display: inline-block;
+}
+dl{
+    display: inline;
+}
