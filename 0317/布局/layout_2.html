@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>两列布局</title> 
+        <style>
+            h3 {
+                text-align: center;
+            }
+            .content {
+               position: relative;
+            }
+            #left {
+                background-color:salmon;
+                width: 200px;
+                position: absolute;
+                /* 绝对定位是相对于最近的 拥有 非static值的position属性的 祖先元素 */
+            } 
+            #right {
+                background-color:sandybrown;
+                margin-left: 200px; 
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h3>两栏布局，左侧固定，右侧随浏览器自适应变化</h3>
+        </div>
+        <div class="content">
+            <div id="left">左侧</div>
+            <div id="right">右侧</div>
+        </div>
+    </body>
+</html>

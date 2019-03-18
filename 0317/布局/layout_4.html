@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>三列布局</title> 
+        <style>
+            body {
+                min-width: 550px;
+            }
+            header,
+            footer {
+                background-color:slategray;
+            }
+            h3 {
+                text-align: center;
+            }
+
+           #content {
+               padding-left: 200px;
+               padding-right: 150px;
+           }
+           #content .colomns {
+                float: left; 
+                position: relative;
+           }
+           #middel {
+               width: 100%;
+           }
+           #left {
+               width: 200px;
+               margin-left: -100%;
+               right: 200px;
+           }
+           #right {
+               width: 150px;
+               margin-right: -150px;
+           }
+           footer {
+               clear: both;
+           }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h3>左右固定中间自适应 圣杯布局</h3>
+        </header>
+        <div id="content">
+            <div id="middel" class="colomns">中间</div>
+            <div id="left" class="colomns">左侧</div>
+            <div id="right" class="colomns">右侧</div>
+        </div>
+        <footer>footer</footer>
+    </body>
+</html>
